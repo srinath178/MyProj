@@ -1,0 +1,40 @@
+1.install: npm install @angular/cli --global
+
+2.version check: ng version
+
+3.new project: ng new _________(Project Name)
+            -> angular routing-Y(yes)
+            -> select css
+
+4.run: ng serve (or) ng s
+  Stop: ctr+c(shortcut) (or) close command prompt
+
+5.create component: ng generate component _______(component name)
+                                   (or)
+                    ng g c _______(component name)
+  -> format checker(create component): ng generate component components/grid --dry-run
+
+6.create model or class: ng g class ______(model name)
+      eg:   ng g class model/customer
+
+7.create service: ng g service ______(service name)
+      eg:   ng g service services/utility
+
+8.create pipe: ng g pipe ______(pipe name)
+      eg.   ng g pipe pipes/exp
+
+9.create child module: n g module ______(module name)
+      eg.   ng g module modules/dashboard
+  -> to create component for child module: n g c landingpage --module modules/dashboard
+
+10.create workspace(Multiple Projects in one place): ng new my-workspace-abcd(Workspace Name) --create-application false
+   -> create project command: ng g application ui-portal(Project Name)
+          ->yes(Privacy)
+          ->app routing - yes
+          ->select css
+   -> create library: ng g library common-api(Name)
+        -> create component in Project (or) Library: ng g c comps/grid(component name) --project common-api(Project Name)
+        -> create service in project (or) Library: ng g s services/utils(service name) --project common-api(Project Name)
+
+11.When for deploy use this command: ng b (and it's changes the total code into Non-Understandable code)
+   
